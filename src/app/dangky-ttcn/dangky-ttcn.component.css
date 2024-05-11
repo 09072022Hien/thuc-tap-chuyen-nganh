@@ -1,0 +1,178 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+/*
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("assets/anhnen.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+*/
+header{
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+}
+
+.logo{
+  width: 110px;
+  position: absolute;
+  margin: -65px;
+  margin-top: -40px;
+  border-radius: 50%; /* Làm cho viền vuông thành hình tròn */
+  overflow: hidden; /* Che phần ngoài hình tròn */
+  /*font-size: 2em;
+  color: white;
+  user-select: none;*/
+}
+/* đăng ký */
+li,a, .DangKy {
+  display: inline-block;
+  color: aqua;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+}
+
+li a:hover, .dangky:hover .DangKy {
+  background-color:  dimgrey;
+}
+
+li.dangky {
+  display: inline-block;
+}
+
+.dangky-content {
+  display: none;
+  position: absolute;
+  backdrop-filter: blur(20px);
+  min-width: 100px;
+  /*box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2);*/
+  z-index: 1;
+}
+
+.dangky-content a {
+  color:white;
+  padding: 10px 0;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dangky-content a:hover {
+  background-color: lightslategray;
+}
+
+.dangky:hover .dangky-content{
+  display: block;
+}
+
+/*quản lý đăng ký */
+
+li,a, .QLDangKy {
+  display: inline-block;
+  color: aqua;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+}
+
+li a:hover, .qldangky:hover .QLDangKy {
+  background-color: dimgrey;
+}
+
+li.qldangky {
+  display: inline-block;
+}
+
+.qldangky-content {
+  display: none;
+  position: absolute;
+  backdrop-filter: blur(20px);
+  min-width: 100px;
+  /*box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2);*/
+  z-index: 1;
+}
+
+.qldangky-content a {
+  color:white;
+  padding: 10px 9.5px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.qldangky-content a:hover {
+  background-color: lightslategray;
+
+}
+
+.qldangky:hover .qldangky-content{
+  display: block;
+}
+
+.select p {
+  color: antiquewhite;
+  font-size: 10px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 207px;
+  width: 79.9%;
+  backdrop-filter: blur(20px);
+  color:white;
+  padding: 20px 0;
+  border-radius: 10px;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.contact-info {
+  text-align: center;
+}
+
+.contact-info h2 {
+  font-size: 20px;
+  margin-top: 0;
+}
+
+.contact-info p {
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.contact-info p {
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.contact-info a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.select p {
+  color: white;
+  position: absolute;
+  font-size: 1.3px;
+}
