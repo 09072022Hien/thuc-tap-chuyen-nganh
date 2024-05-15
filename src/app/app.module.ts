@@ -11,7 +11,7 @@ import { TrangchuComponent } from './trangchu/trangchu.component';
 import { TaiKhoanComponent } from './tai-khoan/tai-khoan.component';
 import { QuanlydangkyTtcnComponent } from './quanlydangky-ttcn/quanlydangky-ttcn.component';
 import { QuanlydangkyKltnComponent } from './quanlydangky-kltn/quanlydangky-kltn.component';
-import { HtmlcssComponent } from './htmlcss/htmlcss.component';
+
 
 @NgModule({
   declarations: [
@@ -23,8 +23,7 @@ import { HtmlcssComponent } from './htmlcss/htmlcss.component';
     TrangchuComponent,
     TaiKhoanComponent,
     QuanlydangkyTtcnComponent,
-    QuanlydangkyKltnComponent,
-    HtmlcssComponent
+    QuanlydangkyKltnComponent
   ],
   imports: [
     BrowserModule,
