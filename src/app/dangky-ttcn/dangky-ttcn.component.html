@@ -1,0 +1,54 @@
+<div class="khungA">
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+  <div class="logoA">
+  <h2>Đơn Đăng ký tực tập chuyên ngành </h2>
+  </div>
+  <form [formGroup]="profileForm" (ngSubmit)="onSubmit()"></form>
+  <div class="form-group">
+    <label for="studentId">MSV:</label>
+    <input id="studentId" type="text" formControlName="studentId" class="form-control">
+    <div *ngIf="profileForm.get('studentId')?.invalid && profileForm.get('studentId')?.touched"
+         class="text-danger">
+      Mã sinh viên là bắt buộc.
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="fullName">Họ Tên:</label>
+    <input id="fullName" type="text" formControlName="fullName" class="form-control">
+    <div *ngIf="profileForm.get('fullName')?.invalid && profileForm.get('fullName')?.touched"
+         class="text-danger">
+      Họ tên là bắt buộc.
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="phone">Số Điện Thoại:</label>
+    <input id="phone" type="text" formControlName="phone" class="form-control">
+    <div *ngIf="profileForm.get('phone')?.invalid && profileForm.get('phone')?.touched"
+         class="text-danger">
+      Số điện thoại không hợp lệ.
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email:</label>
+    <input id="email" type="email" formControlName="email" class="form-control">
+    <div *ngIf="profileForm.get('email')?.invalid && profileForm.get('email')?.touched"
+         class="text-danger">
+      Địa chỉ email không hợp lệ.
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="major">Chuyên Ngành:</label>
+    <input id="major" type="text" formControlName="major" class="form-control">
+    <div *ngIf="profileForm.get('major')?.invalid && profileForm.get('major')?.touched"
+         class="text-danger">
+      Chuyên ngành là bắt buộc.
+    </div>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Đăng Ký</button>
+</form>
+</div>

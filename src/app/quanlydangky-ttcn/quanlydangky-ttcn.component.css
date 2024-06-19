@@ -1,0 +1,20 @@
+.center-table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Chiều cao của trang để đảm bảo nội dung được căn giữa theo chiều dọc */
+}
+
+.table-container {
+  width: 100%; /* Chiều rộng của bảng, bạn có thể điều chỉnh giá trị này */
+  max-width: 2000px; /* Chiều rộng tối đa của bảng */
+  padding: 20px; /* Thêm padding nếu cần */
+}
+
+.mat-elevation-z8 {
+  margin: auto;
+  margin-top: 400px;
+  margin-left: 50px;
+  width: 200vh;
+}
+
